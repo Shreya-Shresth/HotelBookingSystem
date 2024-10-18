@@ -56,3 +56,12 @@ bash
 Copy code
 mvn exec:java -Dexec.mainClass="your.package.App"
 Note: Ensure that the App.java class contains the correct main method and database connection logic.
+
+Notes:
+Replace yourDatabase, yourUsername, and yourPassword with your actual MySQL credentials.
+Adjust the SQL insert query based on your table structure.
+
+Common Issues
+Connection Errors: Ensure that your MySQL service is running and the credentials are correct.
+Port Conflicts: MySQL by default runs on port 3306. If you're using a different port, update the JDBC URL accordingly.
+This README includes instructions on setting up Maven, adding the MySQL connector, and running the application. You can modify the database connection details and the SQL queries as needed for your project.
